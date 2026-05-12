@@ -1,0 +1,170 @@
+.header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0px;
+    left:0px;
+    background-color:rgb(21, 74, 172);
+    display:block;
+    border: 6px solid gold;
+    display:flex;
+}
+
+#logoImage{
+    position: relative;
+    top: 2.5px;;
+    left: 20px;
+}
+
+
+.logoAndName{
+    font-size: 30px;
+    position: relative;
+    align-items:center;
+    display: flex;
+    gap:30px;
+    color:rgb(255, 255, 255)
+}
+
+#profileButton{
+    position: relative;
+    top: 2px;
+    left:900px;
+    display:flex;
+    align-items:center;
+    background: none;
+    border:none;
+    cursor: pointer;
+    gap:00px;
+}
+
+#profileImage{
+    border-radius: 50%;
+    border: 3px solid gold;
+    
+}
+
+.searchBar{
+    position:relative;
+    display:flex;
+    align-items: center;
+    width: 360px;
+    height: 55px;
+    background-color:rgb(255, 255, 255);
+    gap:8px;
+    top:25px;
+    left: 945px;
+    border-radius: 8px ;
+    border-style: solid;
+    border-color: black;
+    
+}
+
+#accountSearch{
+    width: 300px;
+    height: 45px;
+    border: none;
+    position: relative;
+    left:5px;
+}
+
+#searchButton{
+    width:45px;
+    height:45px;
+    background:none;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+#profile{
+    display: none;
+}
+
+#profileImg1 {
+    border-radius: 50%; /*this allows you to make the image a circle*/
+    border: 4px solid gold;
+    position: relative; /*the position is relative to the section its connected to*/
+    left: 30%;
+
+}
+
+section{
+    width: 40%;
+    height: 650px;
+    position: fixed;
+    top: 0px;
+    right: 100px;
+    background-color:rgb(21, 74, 172,0.7);
+    display:block;
+}
+
+.profile_signOut a{ /* the a tells it that you are trying to style the link*/
+    position: relative;
+    left: 40px;
+    top: 10px;
+    cursor: pointer;
+    font-size:30px;
+    color:black;
+}
+
+.profile_signOut a:hover{
+    font-size:30px;
+    color: #0033ff;
+}
+
+.profile_info {
+    position: relative;
+    left: 40%;
+    top: 0px;
+    font-size:20px;
+}
+
+.profile_info a{
+    color:black;
+}
+
+.profile_info a:hover{
+    color:#0033ff;
+}
+
+.follow_stats{
+    font-size: 30px;
+    position: relative;
+    left: 40px;
+    display: flex;
+    gap: 250px;
+}
+
+.username_info{
+    font-size: 30px;
+    position: relative;
+    left: 290px;
+}
+
+.btn {
+    border: none;
+    background-color:rgb(189, 194, 203, 0.5);
+    font-size:30px;
+    cursor:pointer;
+    position:relative;
+    left: 260px;
+}
+
+.profile_immutables{
+    font-size: 25px;
+    position: relative;
+    left: 40px;
+}
+
+
+#usernameTxtBox{
+    display:none;
+}
+.show{
+    display:contents;
+}
