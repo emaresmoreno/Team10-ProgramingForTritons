@@ -29,7 +29,7 @@
 #profileButton{
     position: relative;
     top: 2px;
-    left:900px;
+    left:50%;
     display:flex;
     align-items:center;
     background: none;
@@ -53,7 +53,7 @@
     background-color:rgb(255, 255, 255);
     gap:8px;
     top:25px;
-    left: 945px;
+    left: 50%;
     border-radius: 8px ;
     border-style: solid;
     border-color: black;
@@ -167,4 +167,51 @@ section{
 }
 .show{
     display:contents;
+}
+
+#to_top_button{
+    background-color: #ad99fc;
+    border-radius: 50%;
+    align-items: center;
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    margin-top: 85%
+    
+}
+
+#toTopImage{
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    right: 8%;
+}
+
+#calender_button{
+    background-color: #46ff84;
+    border-radius: 50%;
+    align-items: center;
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    margin-top: 75%;
+}
+
+.header_container{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main_container{
+    max-height: 100%;
+    max-width: 100%;
 }
