@@ -167,31 +167,9 @@ section{
     display:contents;
 }
 
-#to_top_button{
-    background-color: #ad99fc;
-    border-radius: 50%;
-    align-items: center;
-    align-content: center;
-    display: inline-flex;
-    width: 60px;
-    height: 60px;
-    border: none;
-    cursor: pointer;
-    position: fixed;
-    bottom: 15%;
-    left: 93%;
-    
-}
 
 #toTopImage{
-    border-radius: 75%;
-    position: relative;
-    display: flex;
-
-}
-
-#calender_button{
-    background-color: #8e1e1e;
+ background-color: #ad99fc;
     border-radius: 50%;
     align-items: center;
     align-content: center;
@@ -203,7 +181,10 @@ section{
     position: fixed;
     bottom: 3%;
     left: 93%;
+    padding: 10px;
+
 }
+
 
 .header_container{
     display: flex;
@@ -220,6 +201,6 @@ section{
 .main_page{
     top: 150px;
     background-color: rgb(255, 255, 255);
-    align-self: center;
+    left: 5dvh;
 
 }
