@@ -1,5 +1,5 @@
 .header{
-    width: 100%;
+    width: 100vw;
     height: 100px;
     position: fixed;
     top: 0px;
@@ -9,6 +9,8 @@
     border: 6px solid gold;
     display:flex;
 }
+
+
 
 #logoImage{
     position: relative;
@@ -29,7 +31,7 @@
 #profileButton{
     position: relative;
     top: 2px;
-    left:50%;
+    left:50vw;
     display:flex;
     align-items:center;
     background: none;
@@ -48,7 +50,7 @@
     position:relative;
     display:flex;
     align-items: center;
-    width: 360px;
+    width: 21.5%;
     height: 55px;
     background-color:rgb(255, 255, 255);
     gap:8px;
@@ -61,7 +63,7 @@
 }
 
 #accountSearch{
-    width: 300px;
+    width: 40vw;
     height: 45px;
     border: none;
     position: relative;
@@ -74,10 +76,6 @@
     background:none;
     border-radius: 50%;
 }
-
-
-
-
 
 
 
@@ -173,35 +171,38 @@ section{
     background-color: #ad99fc;
     border-radius: 50%;
     align-items: center;
+    align-content: center;
     display: inline-flex;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border: none;
     cursor: pointer;
-    position: relative;
-    margin-top: 85%
+    position: fixed;
+    bottom: 15%;
+    left: 93%;
     
 }
 
 #toTopImage{
-    border-radius: 50%;
+    border-radius: 75%;
     position: relative;
     display: flex;
-    align-items: center;
-    right: 8%;
+
 }
 
 #calender_button{
-    background-color: #46ff84;
+    background-color: #8e1e1e;
     border-radius: 50%;
     align-items: center;
+    align-content: center;
     display: inline-flex;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border: none;
     cursor: pointer;
-    position: relative;
-    margin-top: 75%;
+    position: fixed;
+    bottom: 3%;
+    left: 93%;
 }
 
 .header_container{
@@ -214,4 +215,11 @@ section{
 .main_container{
     max-height: 100%;
     max-width: 100%;
+}
+
+.main_page{
+    top: 150px;
+    background-color: rgb(255, 255, 255);
+    align-self: center;
+
 }
