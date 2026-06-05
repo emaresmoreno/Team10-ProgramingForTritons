@@ -55,4 +55,24 @@ function toTop(){
         behavior: "smooth"
     })
 }
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("calendarButton").addEventListener("click", function(){
+    this.style.display = "none";
+    // alert("button pressed");
+    document.getElementById("calendarPanel").classList.add("show");
+    document.getElementById("calendarPanel").style.display = "block";
+    document.getElementById("calendarPanel").style.position = "fixed";
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("calendarClose").addEventListener("click", function(){
+    document.getElementById("calendarPanel").classList.remove("show");
+    // alert("button pressed");
+    document.getElementById("calendarButton").style.display = "inline-block";
+  });
+});
   
