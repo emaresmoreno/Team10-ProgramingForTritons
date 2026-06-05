@@ -106,7 +106,7 @@ section{
     display:block;
 }
 
-.profile_signOut a{ /* the a tells it that you are trying to style the link*/
+#profile_signOut{ /* the a tells it that you are trying to style the link*/
     position: relative;
     left: 40px;
     top: 10px;
@@ -115,11 +115,28 @@ section{
     color:black;
 }
 
-.profile_signOut a:hover{
+#profile_signOut:hover{
     font-size:30px;
     color: #0033ff;
 }
 
+#signOutExit{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding:0px -30px;
+}
+#exitProfile{
+    position: flex;
+    justify-content:flex-end;
+    left: 0px;
+    top: -250px;
+    cursor: pointer;
+    font-size:30px;
+    color:rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
 .profile_info {
     position: relative;
     left: 40%;
