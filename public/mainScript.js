@@ -100,4 +100,10 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("calendarButton").style.display = "inline-block";
   });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("likeButton").addEventListener("click", function(){
+    alert("liked the post");
+  });
+});
   
