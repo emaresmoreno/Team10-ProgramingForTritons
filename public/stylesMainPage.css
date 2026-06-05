@@ -29,7 +29,8 @@
 #profileButton{
     position: relative;
     top: 2px;
-    left:900px;
+    /*left:900px;*/
+    left: 50%;
     display:flex;
     align-items:center;
     background: none;
@@ -48,12 +49,14 @@
     position:relative;
     display:flex;
     align-items: center;
-    width: 360px;
+    /*width: 360px;*/
+    width: 21.5vw;
     height: 55px;
     background-color:rgb(255, 255, 255);
     gap:8px;
     top:25px;
-    left: 945px;
+    /*left: 945px;*/
+    left: 50%;
     border-radius: 8px ;
     border-style: solid;
     border-color: black;
