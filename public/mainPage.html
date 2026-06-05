@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Main User Page</title>
+   	    <link rel="stylesheet" href="stylesMainPage.css" type="text/css"/>
+        <link rel="icon" href="" type="image/x-icon" />
+        <!--<script type="text/javascript" src="script.js"></script> -->
+        <!--<script type="module" src="../script.js"></script> -->
+    </head>
+
+    <body>
+        <!-- Add HTML markup elements for your web site below -->
+        <section class="header">
+            <div class="logoAndName">
+                <img id = "logoImage" src = "./images/logo project (1080 x 1080 px) (1).png" alt="Stingray"  width ="80" height="80">
+                <p>TritonPlus</p>
+            </div>
+            <button id="profileButton">
+                <img id = "profileImage" src = "./images/HG.png" alt="Stingray"  width ="80" height="80">
+            </button>
+            <div class ="searchBar">
+                <input type="text" id ="accountSearch" placeholder = "WIC@UCSD" >
+                <button id="searchButton">
+                    <img id = "searchImage" src = "./images/search_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png">
+                </button>
+            </div>
+        </section>
+
+         <section id="profile" style = "display:none;">
+            <div class = "profile_signOut">
+                <a href="">Sign Out</a> <!-- this will lead back to the log in page and will no longer ave you logged in-->
+            </div>
+            <img id = "profileImg1" src = "./images/logo project (1080 x 1080 px) (1).png" alt="Stingray"  width ="250" height="250">
+            <div class = "username_info">
+                <p>UserID</p>
+            </div>
+            <!--<button class="btn username" onclick = "changeUsername()" id = "usernameButton"> Username</button> this will lead back to the log in page and will no longer have you logged in-->
+            <!--<input type="text" id="usernameTxtBox" placeholder="new Username...">-->
+            <div class="profile_immutables">
+                <p> bio </p>
+                <p id="userEmail"> </p>
+                <p id="userName"> </p>
+            </div>
+            <div class="follow_stats">
+                <p> Followers: </p>              
+                <p> Following:</p>
+            </div>
+        </section>
+
+     
+        <div id = "calendarPanel">
+            <button id = "calendarClose" > 
+                <img id = "calendarCloseImg" src = "images/close_img.jpg">     
+            </button>
+
+            <br/>
+            <iframe src="https://calendar.google.com/calendar/embed?src=c_a8933ae5b1d0b534d35765b93507fa4dbf3107a2a1c77490fbc93bb99a1ab224%40group.calendar.google.com&ctz=America%2FLos_Angeles" 
+            style = "border: 0" 
+            width = "70%" 
+            height = "400" 
+            frameborder="0">
+            </iframe>
+
+        </div>
+
+
+        <button id = "calendarButton">
+            <img id = "calendarImg", src = "images/calender_icon.webp">
+        </button>
+
+        <img id ="toTopImage" src = "images/surfer.webp" alt = "To Top", onclick ="toTop()">
+
+        <script type="module" src="mainScript.js"></script>
+    </body>
+</html>
