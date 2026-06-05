@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.13.0/firebase-app.js";
-import { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged} from "https://www.gstatic.com/firebasejs/12.13.0/firebase-auth.js";
+import { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged,signOut} from "https://www.gstatic.com/firebasejs/12.13.0/firebase-auth.js";
 console.log("mainScript.js loaded");
 const firebaseConfig = {
     apiKey: "AIzaSyCniUeFyR5jvC5v6q8_gr4ti11KvIUMuE8",
@@ -31,13 +31,30 @@ onAuthStateChanged(auth, (user) =>{
         const uid = user.ui;
         return uid;
     } else{
+        console.log("user is not logged in");
 
     }
 })
 
+function logOut(e){
+    e.preventDefault();
+
+    signOut(auth).then(() => {
+  // Sign-out successful.
+        console.log("signed out");
+        window.location.href = "index.html"
+    }).catch((error) => {
+  // An error happened.
+    });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     const profileButton = document.getElementById("profileButton");
     const profile = document.getElementById("profile");
+    const logout_btn = document.getElementById("profile_signOut");
+    const exitProfile = document.getElementById("exitProfile");
+
+    logout_btn.addEventListener("click", logOut);
 
     profileButton.addEventListener('click', ()=>{
 
@@ -45,6 +62,14 @@ document.addEventListener("DOMContentLoaded", () => {
             profile.style.display = 'block'
         } else{
             profile.style.display = "none";
+        }
+    });
+    exitProfile.addEventListener('click', ()=>{
+
+        if(profile.style.display != 'none' || profile.style.display != ''){
+            profile.style.display = 'none'
+        } else{
+            profile.style.display = "block";
         }
     });
 });
