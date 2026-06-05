@@ -1,3 +1,8 @@
+    <?php /* Short and sweet */
+    define('WP_USE_THEMES', false);
+    require('./wp-blog-header.php');
+    ?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -6,6 +11,7 @@
         <title>Main User Page</title>
    	    <link rel="stylesheet" href="stylesMainPage.css" type="text/css"/>
         <link rel="icon" href="" type="image/x-icon" />
+    
         <!--<script type="text/javascript" src="script.js"></script> -->
         <!--<script type="module" src="../script.js"></script> -->
     </head>
@@ -71,6 +77,11 @@
         </button>
 
         <img id ="toTopImage" src = "images/surfer.webp" alt = "To Top", onclick ="toTop()">
+
+
+        <button id = "makePost">
+            <p id = "makePostText"> Make Post</p>
+        </button>
 
         <script type="module" src="mainScript.js"></script>
     </body>
