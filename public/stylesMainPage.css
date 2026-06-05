@@ -180,11 +180,11 @@ section{
     display: inline-flex;
     width: 60px;
     height: 60px;
-    border: none;
+    border: 4px solid gold;
     cursor: pointer;
     position: fixed;
     bottom: 3%;
-    left: 93%;
+    left: 91%;
     padding: 10px;
 
 }
