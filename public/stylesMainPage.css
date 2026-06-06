@@ -98,7 +98,6 @@
 
 section{
     width: 40%;
-    height: 650px;
     position: fixed;
     top: 0px;
     right: 100px;
@@ -160,11 +159,7 @@ section{
     gap: 250px;
 }
 
-.username_info{
-    font-size: 30px;
-    position: relative;
-    left: 290px;
-}
+
 
 .btn {
     border: none;
@@ -178,7 +173,7 @@ section{
 .profile_immutables{
     font-size: 25px;
     position: relative;
-    left: 40px;
+    left: 200px;
 }
 
 
